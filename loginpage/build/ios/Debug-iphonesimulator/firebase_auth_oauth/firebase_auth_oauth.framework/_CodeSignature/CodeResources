@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/firebase_auth_oauth.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ilriRAEHWReEzwquH3PY9HHygt4=
+		SvZuMye5nNiUpJ/knETefIj2Q2A=
 		</data>
 		<key>Modules/firebase_auth_oauth.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/firebase_auth_oauth.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ilriRAEHWReEzwquH3PY9HHygt4=
+		SvZuMye5nNiUpJ/knETefIj2Q2A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -121,11 +121,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ilriRAEHWReEzwquH3PY9HHygt4=
+			SvZuMye5nNiUpJ/knETefIj2Q2A=
 			</data>
 			<key>hash2</key>
 			<data>
-			D71HqKuUHt4OF6W6nj6X1FN0bs6NjjPq7qia1JOfqLE=
+			QDzHu0M4gyLB01IOD+w69fcEQ0cRKjGCVxnRc6oy72k=
 			</data>
 		</dict>
 		<key>Modules/firebase_auth_oauth.swiftmodule/x86_64.swiftdoc</key>
@@ -143,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ilriRAEHWReEzwquH3PY9HHygt4=
+			SvZuMye5nNiUpJ/knETefIj2Q2A=
 			</data>
 			<key>hash2</key>
 			<data>
-			D71HqKuUHt4OF6W6nj6X1FN0bs6NjjPq7qia1JOfqLE=
+			QDzHu0M4gyLB01IOD+w69fcEQ0cRKjGCVxnRc6oy72k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
