@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'homepage_content.dart';
+import 'package:gridview/animatedsearchbar.dart';
+import 'package:gridview/giphysearch.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,11 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'HomePageScreen',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
         brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(),
+      home: GiphySearchPage(),
     );
   }
 }
