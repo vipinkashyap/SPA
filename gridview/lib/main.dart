@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gridview/animatedsearchbar.dart';
 import 'package:gridview/giphysearch.dart';
 
 void main() {
