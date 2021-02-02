@@ -65,20 +65,78 @@ class _SettingsPageState extends State<SettingsPage> {
             SizedBox(
               height: 15.0,
             ),
-            buildAccountOptionRow(
-              context,
-              'Purchases & Sales',
-              Icon(
-                FontAwesomeIcons.dollarSign,
-                color: Colors.teal,
+            GestureDetector(
+              child: ListTile(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("option 1"),
+                            Text("Option 2"),
+                            Text("Option 3"),
+                          ],
+                        ),
+                        actions: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                title: Text(
+                  'Purchases & Sales',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.dollarSign,
+                  color: Colors.teal,
+                ),
               ),
             ),
-            buildAccountOptionRow(
-              context,
-              'Payment & Deposit Methods',
-              Icon(
-                FontAwesomeIcons.creditCard,
-                color: Colors.teal,
+            GestureDetector(
+              child: ListTile(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("option 1"),
+                            Text("Option 2"),
+                            Text("Option 3"),
+                          ],
+                        ),
+                        actions: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                title: Text(
+                  'Payment & Deposit Methods',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.creditCard,
+                  color: Colors.teal,
+                ),
               ),
             ),
             SizedBox(
@@ -102,20 +160,78 @@ class _SettingsPageState extends State<SettingsPage> {
             SizedBox(
               height: 15.0,
             ),
-            buildAccountOptionRow(
-              context,
-              'Saved items',
-              Icon(
-                FontAwesomeIcons.heart,
-                color: Colors.teal,
+            GestureDetector(
+              child: ListTile(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("option 1"),
+                            Text("Option 2"),
+                            Text("Option 3"),
+                          ],
+                        ),
+                        actions: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                title: Text(
+                  'Saved Items',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.heart,
+                  color: Colors.teal,
+                ),
               ),
             ),
-            buildAccountOptionRow(
-              context,
-              'Search alerts',
-              Icon(
-                FontAwesomeIcons.bell,
-                color: Colors.teal,
+            GestureDetector(
+              child: ListTile(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("option 1"),
+                            Text("Option 2"),
+                            Text("Option 3"),
+                          ],
+                        ),
+                        actions: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                title: Text(
+                  'Search Alerts',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.bell,
+                  color: Colors.teal,
+                ),
               ),
             ),
             SizedBox(
@@ -139,20 +255,78 @@ class _SettingsPageState extends State<SettingsPage> {
             SizedBox(
               height: 15.0,
             ),
-            buildAccountOptionRow(
-              context,
-              'Help',
-              Icon(
-                FontAwesomeIcons.question,
-                color: Colors.teal,
+            GestureDetector(
+              child: ListTile(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("option 1"),
+                            Text("Option 2"),
+                            Text("Option 3"),
+                          ],
+                        ),
+                        actions: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                title: Text(
+                  'Help',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.question,
+                  color: Colors.teal,
+                ),
               ),
             ),
-            buildAccountOptionRow(
-              context,
-              'Community Actions',
-              Icon(
-                FontAwesomeIcons.bolt,
-                color: Colors.teal,
+            GestureDetector(
+              child: ListTile(
+                onTap: () {
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) {
+                      return AlertDialog(
+                        content: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text("option 1"),
+                            Text("Option 2"),
+                            Text("Option 3"),
+                          ],
+                        ),
+                        actions: [
+                          FlatButton(
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text('Close'),
+                          ),
+                        ],
+                      );
+                    },
+                  );
+                },
+                title: Text(
+                  'Community Actions',
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),
+                ),
+                trailing: Icon(
+                  FontAwesomeIcons.bolt,
+                  color: Colors.teal,
+                ),
               ),
             ),
             OutlineButton(
@@ -171,59 +345,6 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
             )
-          ],
-        ),
-      ),
-    );
-  }
-
-  GestureDetector buildAccountOptionRow(
-      BuildContext context, String title, Icon icon) {
-    return GestureDetector(
-      onTap: () {
-        showDialog(
-          context: context,
-          builder: (BuildContext context) {
-            return AlertDialog(
-              title: Text(title),
-              content: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text("option 1"),
-                  Text("Option 2"),
-                  Text("Option 3"),
-                ],
-              ),
-              actions: [
-                FlatButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  child: Text('Close'),
-                ),
-              ],
-            );
-          },
-        );
-      },
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 15.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            GestureDetector(
-              child: Text(
-                title,
-                style: TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ),
-            Icon(
-              FontAwesomeIcons.chevronCircleRight,
-              color: Colors.teal,
-            ),
           ],
         ),
       ),
