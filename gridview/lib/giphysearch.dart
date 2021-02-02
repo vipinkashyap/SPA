@@ -11,6 +11,11 @@ class GiphySearchPage extends StatefulWidget {
 }
 
 class _GiphySearchPageState extends State<GiphySearchPage> {
+  double xOffset = 0;
+  double yOffset = 0;
+  double scaleFactor = 1;
+  bool _isCategoryDrawerOpen = false;
+
   int selectedIndex = 0;
   bool _isFolded = true;
   bool isLoading = false;
@@ -50,10 +55,6 @@ class _GiphySearchPageState extends State<GiphySearchPage> {
   }
 
   List<NavigationItem> items = [
-    NavigationItem(
-      icon: Icon(FontAwesomeIcons.bars),
-      color: Colors.black54,
-    ),
     NavigationItem(
       icon: Icon(FontAwesomeIcons.home),
       color: Colors.black54,
@@ -121,151 +122,205 @@ class _GiphySearchPageState extends State<GiphySearchPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomPadding: false,
-      resizeToAvoidBottomInset: false,
-      backgroundColor: Vx.gray800,
-      body: SafeArea(
-        child: Theme(
-          data: ThemeData.dark(),
-          child: Column(
-            children: [
-              // "Search Products".text.xl4.make().objectCenter(),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Flexible(
-                    child: AnimatedContainer(
-                      duration: Duration(milliseconds: 300),
-                      width: _isFolded ? 55 : 200,
-                      height: 55,
-                      decoration: BoxDecoration(
-                        boxShadow: kElevationToShadow[8],
-                        borderRadius: BorderRadius.circular(30),
-                        color: Colors.white,
-                      ),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Container(
-                              padding: EdgeInsets.only(left: 16.0),
-                              child: !_isFolded
-                                  ? TextField(
-                                      controller: controller,
-                                      decoration: InputDecoration(
-                                          fillColor:
-                                              Colors.black.withOpacity(0.6),
-                                          contentPadding:
-                                              const EdgeInsets.symmetric(
-                                                  vertical: 10.0),
-                                          hintText: 'Search Products',
-                                          hintStyle: TextStyle(
-                                              color: Colors.blue[600],
-                                              fontSize: 14.0),
-                                          border: InputBorder.none),
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        decorationColor: Colors.black,
-                                      ),
-                                    )
-                                  : null,
-                            ),
-                          ),
-                          Container(
-                            child: Material(
-                              type: MaterialType.transparency,
-                              child: InkWell(
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(_isFolded ? 30 : 0),
-                                  topRight: Radius.circular(30),
-                                  bottomLeft:
-                                      Radius.circular(_isFolded ? 30 : 0),
-                                  bottomRight: Radius.circular(30),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(15.0),
-                                  child: Icon(
-                                    _isFolded ? Icons.search : Icons.close,
-                                    color: Colors.blue[800],
-                                  ),
-                                ),
-                                onTap: () {
-                                  setState(() {
-                                    _isFolded = !_isFolded;
-                                  });
-                                },
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  20.widthBox,
-                  RaisedButton(
-                    onPressed: () {
-                      getData(controller.text);
-                    },
-                    shape: Vx.roundedSm,
-                    child: Text("Search"),
-                  ).h4(context),
-                ],
-              ).p2(),
-              SizedBox(
-                height: 30.0,
-              ),
-              if (isLoading)
-                CircularProgressIndicator().centered()
-              else
-                VxConditional(
-                  condition: data != null,
-                  builder: (context) => InfiniteGridView(
-                    nextData: this.loadNextData(),
-                    itemCount: data.length,
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        mainAxisSpacing: 4.0,
-                        crossAxisSpacing: 2.0),
-                    itemBuilder: (context, index) {
-                      final url = data[index]["images"]["fixed_height"]["url"]
-                          .toString();
-                      return Image.network(
-                        url,
-                        fit: BoxFit.cover,
-                      ).card.roundedSM.make();
-                    },
-                  ),
-                  fallback: (context) =>
-                      "Nothing found".text.gray500.xl3.makeCentered(),
-                ).h(context.percentHeight * 70),
-            ],
-          ).p12(),
+    return AnimatedContainer(
+      curve: Curves.bounceOut,
+      transform: Matrix4.translationValues(xOffset, yOffset, 0)
+        ..scale(scaleFactor),
+      duration: Duration(milliseconds: 200),
+      decoration: BoxDecoration(
+        color: Colors.grey[300],
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(30),
+          bottomLeft: Radius.circular(30),
         ),
       ),
-      bottomNavigationBar: Container(
-        width: MediaQuery.of(context).size.width,
-        height: 80.0,
-        padding: EdgeInsets.symmetric(horizontal: 6.0),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(30.0),
-              topRight: Radius.circular(30.0),
-            ),
-            color: Colors.grey[300]),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: items.map((item) {
-            var itemIndex = items.indexOf(item);
+      child: Scaffold(
+        resizeToAvoidBottomPadding: false,
+        resizeToAvoidBottomInset: false,
+        backgroundColor: Colors.white,
+        body: SafeArea(
+          child: Theme(
+            data: ThemeData.dark(),
+            child: Column(
+              children: [
+                // "Search Products".text.xl4.make().objectCenter(),
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 6.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                      _isCategoryDrawerOpen
+                          ? IconButton(
+                              icon: Icon(
+                                FontAwesomeIcons.chevronLeft,
+                                color: Colors.black,
+                              ),
+                              onPressed: () {
+                                setState(
+                                  () {
+                                    xOffset = 0;
+                                    yOffset = 0;
+                                    scaleFactor = 1;
+                                    _isCategoryDrawerOpen = false;
+                                  },
+                                );
+                              },
+                            )
+                          : IconButton(
+                              icon: Icon(
+                                FontAwesomeIcons.bars,
+                                color: Colors.black,
+                              ),
+                              onPressed: () {
+                                setState(
+                                  () {
+                                    xOffset = 250;
+                                    yOffset = 150;
+                                    scaleFactor = 0.6;
+                                    _isCategoryDrawerOpen = true;
+                                  },
+                                );
+                              },
+                            ),
+                      Flexible(
+                        child: AnimatedContainer(
+                          duration: Duration(milliseconds: 300),
+                          width: _isFolded ? 55 : 200,
+                          height: 55,
+                          decoration: BoxDecoration(
+                            boxShadow: kElevationToShadow[8],
+                            borderRadius: BorderRadius.circular(30),
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Container(
+                                  padding: EdgeInsets.only(left: 16.0),
+                                  child: !_isFolded
+                                      ? TextField(
+                                          controller: controller,
+                                          decoration: InputDecoration(
+                                              fillColor:
+                                                  Colors.black.withOpacity(0.6),
+                                              contentPadding:
+                                                  const EdgeInsets.symmetric(
+                                                      vertical: 10.0),
+                                              hintText: 'Search Products',
+                                              hintStyle: TextStyle(
+                                                  color: Colors.blue[600],
+                                                  fontSize: 14.0),
+                                              border: InputBorder.none),
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            decorationColor: Colors.black,
+                                          ),
+                                        )
+                                      : null,
+                                ),
+                              ),
+                              Container(
+                                child: Material(
+                                  type: MaterialType.transparency,
+                                  child: InkWell(
+                                    borderRadius: BorderRadius.only(
+                                      topLeft:
+                                          Radius.circular(_isFolded ? 30 : 0),
+                                      topRight: Radius.circular(30),
+                                      bottomLeft:
+                                          Radius.circular(_isFolded ? 30 : 0),
+                                      bottomRight: Radius.circular(30),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(15.0),
+                                      child: Icon(
+                                        _isFolded ? Icons.search : Icons.close,
+                                        color: Colors.blue[800],
+                                      ),
+                                    ),
+                                    onTap: () {
+                                      setState(() {
+                                        _isFolded = !_isFolded;
+                                      });
+                                    },
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      20.widthBox,
+                      RaisedButton(
+                        onPressed: () {
+                          getData(controller.text);
+                        },
+                        shape: Vx.roundedSm,
+                        child: Text("Search"),
+                      ).h4(context),
+                    ],
+                  ).p2(),
+                ),
+                SizedBox(
+                  height: 30.0,
+                ),
+                if (isLoading)
+                  CircularProgressIndicator().centered()
+                else
+                  VxConditional(
+                    condition: data != null,
+                    builder: (context) => InfiniteGridView(
+                      nextData: this.loadNextData(),
+                      itemCount: data.length,
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 4.0,
+                          crossAxisSpacing: 2.0),
+                      itemBuilder: (context, index) {
+                        final url = data[index]["images"]["fixed_height"]["url"]
+                            .toString();
+                        return Image.network(
+                          url,
+                          fit: BoxFit.cover,
+                        ).card.roundedSM.make();
+                      },
+                    ),
+                    fallback: (context) =>
+                        "Nothing found".text.black.xl3.makeCentered(),
+                  ).h(context.percentHeight * 70),
+              ],
+            ).p12(),
+          ),
+        ),
+        bottomNavigationBar: Container(
+          width: MediaQuery.of(context).size.width,
+          height: 80.0,
+          padding: EdgeInsets.symmetric(horizontal: 6.0),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30.0),
+                topRight: Radius.circular(30.0),
+              ),
+              color: Colors.grey[300]),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: items.map((item) {
+              var itemIndex = items.indexOf(item);
 
-            return GestureDetector(
-              onTap: () {
-                setState(() {
-                  selectedIndex = itemIndex;
-                });
-              },
-              child: _buildItem(item, selectedIndex == itemIndex),
-            );
-          }).toList(),
+              return GestureDetector(
+                onTap: () {
+                  setState(() {
+                    selectedIndex = itemIndex;
+                  });
+                },
+                child: _buildItem(item, selectedIndex == itemIndex),
+              );
+            }).toList(),
+          ),
         ),
       ),
     );

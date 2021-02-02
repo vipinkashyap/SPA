@@ -32,6 +32,7 @@ dependencies:
   http: ^0.12.2
   velocity_x: ^1.3.1
   font_awesome_flutter: ^8.11.0
+  configurable_expansion_tile: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -64,11 +65,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
+  #fonts:
+  #  - family: Raleway
+  #    fonts:
+  #       - asset: fonts/Raleway-Regular.ttf
+  #       - asset: fonts/Raleway-Thin.ttf
   #         style: italic
   #   - family: Trajan Pro
   #     fonts:
