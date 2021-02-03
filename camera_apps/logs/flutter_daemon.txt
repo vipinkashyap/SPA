@@ -1,7 +1,7 @@
 !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
 
 Dart Code extension: 3.19.1
-Flutter extension: 3.19.0 (activated)
+Flutter extension: 3.19.0 (not activated)
 
 App: Visual Studio Code
 Version: 1.52.1
@@ -24,19 +24,24 @@ NO_PROXY: undefined
 Logging Categories:
     FlutterDaemon
 
-Mon Feb 01 2021 [17:57:13 GMT-0800 (Pacific Standard Time)] Log file started
-[5:57:13 PM] [FlutterDaemon] [Info] Spawning /Users/vipin/Desktop/flutter/bin/flutter with args ["daemon"]
-[5:57:13 PM] [FlutterDaemon] [Info] ..  in /Users/vipin/Desktop/flutter
-[5:57:13 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[5:57:13 PM] [FlutterDaemon] [Info]     PID: 1456
-[5:57:13 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
-[5:57:14 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.0","pid":2036}}]
-[5:57:14 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
-[5:57:14 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
-[5:57:15 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
-[5:57:19 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm64","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
-[5:57:19 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/default_camera_app"}}]
-[5:57:19 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/display_camera"}}]
-[5:57:19 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["ios","android"]}}]
-[5:57:19 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":{"platforms":["ios","android"]}}]
-[5:57:19 PM] [FlutterDaemon] [Info] <== [{"id":"2","result":[null,null,null,null,null,null]}]
+Mon Feb 01 2021 [21:51:54 GMT-0800 (Pacific Standard Time)] Log file started
+[9:51:54 PM] [FlutterDaemon] [Info] Spawning /Users/vipin/Desktop/flutter/bin/flutter with args ["daemon"]
+[9:51:54 PM] [FlutterDaemon] [Info] ..  in /Users/vipin/Desktop/flutter
+[9:51:54 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[9:51:55 PM] [FlutterDaemon] [Info]     PID: 1287
+[9:51:55 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
+[9:51:57 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.0","pid":1349}}]
+[9:51:57 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
+[9:51:57 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[9:51:58 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[9:52:02 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm64","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
+[9:52:02 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/default_camera_app"}}]
+[9:52:02 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/display_camera"}}]
+[9:52:02 PM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/multi_image_picker_camera"}}]
+[9:52:02 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["ios","android"]}}]
+[9:52:02 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":{"platforms":["ios","android"]}}]
+[9:52:02 PM] [FlutterDaemon] [Info] <== [{"id":"5","result":{"platforms":["ios","android"]}}]
+[9:52:04 PM] [FlutterDaemon] [Info] <== [{"id":"2","result":[null,null,null,null,null,null]}]
+[10:29:10 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Unable to run \"adb\", check your Android SDK installation and ANDROID_SDK_ROOT environment variable: /Users/vipin/Library/Android/sdk/platform-tools/adb"}}]
+[10:29:10 PM] [FlutterDaemon] [Info] Process terminated! 1, null
+Tue Feb 02 2021 [19:21:55 GMT-0800 (Pacific Standard Time)] Log file ended

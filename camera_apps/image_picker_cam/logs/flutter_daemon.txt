@@ -1,0 +1,52 @@
+!! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.19.1
+Flutter extension: 3.19.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.52.1
+Platform: mac
+
+Workspace type: Flutter
+Analyzer type: DAS
+Multi-root?: false
+
+Dart SDK:
+    Loc: /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+    Ver: 2.10.5
+Flutter SDK:
+    Loc: /Users/vipin/Desktop/flutter
+    Ver: 1.22.6
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+
+Logging Categories:
+    FlutterDaemon
+
+Tue Feb 02 2021 [19:22:01 GMT-0800 (Pacific Standard Time)] Log file started
+[7:22:02 PM] [FlutterDaemon] [Info] Spawning /Users/vipin/Desktop/flutter/bin/flutter with args ["daemon"]
+[7:22:02 PM] [FlutterDaemon] [Info] ..  in /Users/vipin/Desktop/flutter
+[7:22:02 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[7:22:02 PM] [FlutterDaemon] [Info]     PID: 4146
+[7:22:02 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
+[7:22:05 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.0","pid":4206}}]
+[7:22:05 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
+[7:22:05 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[7:22:06 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[7:22:12 PM] [FlutterDaemon] [Info] <== [{"id":"2","result":[null,null,null,null,null,null]}]
+[7:30:40 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/image_picker_cam"}}]
+[7:30:40 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["ios","android"]}}]
+[7:30:40 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"emulator.getEmulators"}]
+[7:30:40 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[7:31:11 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for ro.product.cpu.abi:"}}]
+[7:31:11 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"error: closed\n"}}]
+[7:31:11 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
+[7:31:11 PM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/image_picker_cam"}}]
+[7:31:11 PM] [FlutterDaemon] [Info] <== [{"id":"5","result":{"platforms":["ios","android"]}}]
+[7:31:12 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for ro.product.cpu.abi:"}}]
+[7:31:12 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"adb: device '9889d63854445a4e46' not found\n"}}]
+[7:31:12 PM] [FlutterDaemon] [Info] <== [{"event":"device.removed","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
+[7:31:56 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm64","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
+[7:31:56 PM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/image_picker_cam"}}]
+[7:31:56 PM] [FlutterDaemon] [Info] <== [{"id":"6","result":{"platforms":["ios","android"]}}]

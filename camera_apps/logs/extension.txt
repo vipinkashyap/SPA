@@ -1,0 +1,156 @@
+!! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.19.1
+Flutter extension: 3.19.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.52.1
+Platform: mac
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+
+Logging Categories:
+    General
+
+Mon Feb 01 2021 [21:51:54 GMT-0800 (Pacific Standard Time)] Log file started
+[9:51:54 PM] [General] [Info] Searching for SDKs...
+[9:51:54 PM] [General] [Info] Environment PATH:
+[9:51:54 PM] [General] [Info]     /Users/vipin/.rvm/gems/ruby-2.7.2/bin
+[9:51:54 PM] [General] [Info]     /Users/vipin/.rvm/gems/ruby-2.7.2@global/bin
+[9:51:54 PM] [General] [Info]     /Users/vipin/.rvm/rubies/ruby-2.7.2/bin
+[9:51:54 PM] [General] [Info]     /usr/local/bin
+[9:51:54 PM] [General] [Info]     /usr/bin
+[9:51:54 PM] [General] [Info]     /bin
+[9:51:54 PM] [General] [Info]     /usr/sbin
+[9:51:54 PM] [General] [Info]     /sbin
+[9:51:54 PM] [General] [Info]     /Library/Apple/usr/bin
+[9:51:54 PM] [General] [Info]     /Users/vipin/Desktop/flutter/bin
+[9:51:54 PM] [General] [Info]     /Users/vipin/.rvm/bin
+[9:51:54 PM] [General] [Info] Found Flutter project at /Users/vipin/Desktop/SPA/camera_apps/default_camera_app:
+			Mobile? true
+			Web? false
+			Create Trigger? false
+			Flutter Repo? false
+[9:51:54 PM] [General] [Info] Found Flutter project at /Users/vipin/Desktop/SPA/camera_apps/display_camera:
+			Mobile? true
+			Web? false
+			Create Trigger? false
+			Flutter Repo? false
+[9:51:54 PM] [General] [Info] Found Flutter project at /Users/vipin/Desktop/SPA/camera_apps/multi_image_picker_camera:
+			Mobile? true
+			Web? false
+			Create Trigger? false
+			Flutter Repo? false
+[9:51:54 PM] [General] [Info] Searching for flutter
+[9:51:54 PM] [General] [Info]     Looking for flutter in:
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/SPA/camera_apps/default_camera_app
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/SPA/camera_apps/default_camera_app/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/SPA/camera_apps/default_camera_app/.flutter
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/SPA/camera_apps/default_camera_app/.flutter/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/SPA/camera_apps/default_camera_app/vendor/flutter
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/SPA/camera_apps/default_camera_app/vendor/flutter/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/gems/ruby-2.7.2/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/gems/ruby-2.7.2@global/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/rubies/ruby-2.7.2/bin
+[9:51:54 PM] [General] [Info]         /usr/local/bin
+[9:51:54 PM] [General] [Info]         /usr/bin
+[9:51:54 PM] [General] [Info]         /bin
+[9:51:54 PM] [General] [Info]         /usr/sbin
+[9:51:54 PM] [General] [Info]         /sbin
+[9:51:54 PM] [General] [Info]         /Library/Apple/usr/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/bin
+[9:51:54 PM] [General] [Info]     Found at:
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin
+[9:51:54 PM] [General] [Info]     Candidate paths to be post-filtered:
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter
+[9:51:54 PM] [General] [Info]     Found at /Users/vipin/Desktop/flutter
+[9:51:54 PM] [General] [Info]     Returning SDK path /Users/vipin/Desktop/flutter for flutter
+[9:51:54 PM] [General] [Info] Searching for dart
+[9:51:54 PM] [General] [Info]     Looking for dart in:
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/gems/ruby-2.7.2/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/gems/ruby-2.7.2@global/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/rubies/ruby-2.7.2/bin
+[9:51:54 PM] [General] [Info]         /usr/local/bin
+[9:51:54 PM] [General] [Info]         /usr/bin
+[9:51:54 PM] [General] [Info]         /bin
+[9:51:54 PM] [General] [Info]         /usr/sbin
+[9:51:54 PM] [General] [Info]         /sbin
+[9:51:54 PM] [General] [Info]         /Library/Apple/usr/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/.rvm/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk/bin
+[9:51:54 PM] [General] [Info]     Found at:
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk/bin
+[9:51:54 PM] [General] [Info]     Candidate paths to be post-filtered:
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter
+[9:51:54 PM] [General] [Info]         /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+[9:51:54 PM] [General] [Info]     Found at /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+[9:51:54 PM] [General] [Info]     Returning SDK path /Users/vipin/Desktop/flutter/bin/cache/dart-sdk for dart
+[9:51:54 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.19.1
+Flutter extension: 3.19.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.52.1
+Platform: mac
+
+Workspace type: Flutter
+Analyzer type: DAS
+Multi-root?: false
+
+Dart SDK:
+    Loc: /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+    Ver: 2.10.4
+Flutter SDK:
+    Loc: /Users/vipin/Desktop/flutter
+    Ver: 1.22.5
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+[9:51:54 PM] [General] [Info] Experiment random number is 40 for experiement 'lsp-prompt'. Experiment is enabled for <= 60
+[9:51:54 PM] [General] [Info] Experiment 'lsp-prompt' is activating (not first time)
+[9:51:55 PM] [General] [Info] Activating Flutter extension for Flutter project...
+[9:51:55 PM] [General] [Info] Extension:Startup timing: 527ms
+[9:51:55 PM] [General] [Info] Found 0 folders requiring "pub get":
+[9:51:55 PM] [General] [Info] !! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.19.1
+Flutter extension: 3.19.0 (activated)
+
+App: Visual Studio Code
+Version: 1.52.1
+Platform: mac
+
+Workspace type: Flutter
+Analyzer type: DAS
+Multi-root?: false
+
+Dart SDK:
+    Loc: /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+    Ver: 2.10.4
+Flutter SDK:
+    Loc: /Users/vipin/Desktop/flutter
+    Ver: 1.22.5
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+[9:51:57 PM] [General] [Info] Analyzer:Startup timing: 2085ms
+[9:52:02 PM] [General] [Info] Checking 3 projects for supported platforms
+[9:52:02 PM] [General] [Info] Supported platforms for the workspace are ios, android
+[9:52:10 PM] [General] [Info] Analyzer:FirstAnalysis timing: 8745ms
+[7:20:55 PM] [General] [Info] Pubspec /Users/vipin/Desktop/SPA/camera_apps/image_picker_cam/pubspec.yaml was modified
+[7:20:56 PM] [General] [Info] Found 1 folders requiring "pub get":
+    /Users/vipin/Desktop/SPA/camera_apps/image_picker_cam
+Tue Feb 02 2021 [19:21:55 GMT-0800 (Pacific Standard Time)] Log file ended
