@@ -1,5 +1,5 @@
 # SPA
- Collection of SIngle Page Apps
+ Collection of Single Page Apps
 ## Why?
 Breaking down big apps into byte sized chunks helps understand implementation better
 ## How ?
