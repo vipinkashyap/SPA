@@ -1,6 +1,6 @@
 # gridview
 
-A new Flutter application.
+A Giphy gif viewer app with Search Enabled.
 
 ## Getting Started
 
@@ -14,3 +14,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## App Preview
+![Default Screen](https://raw.githubusercontent.com/vipinkashyap/SPA/master/gridview/lib/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202021-01-30%20at%2018.44.02.png)
+![Pizza Search](https://raw.githubusercontent.com/vipinkashyap/SPA/master/gridview/lib/Simulator%20Screen%20Shot%20-%20iPhone%2011%20Pro%20-%202021-01-30%20at%2018.44.23.png)
+
