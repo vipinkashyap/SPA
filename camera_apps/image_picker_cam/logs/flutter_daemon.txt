@@ -24,15 +24,18 @@ NO_PROXY: undefined
 Logging Categories:
     FlutterDaemon
 
-Tue Feb 02 2021 [22:11:55 GMT-0800 (Pacific Standard Time)] Log file started
-[10:11:55 PM] [FlutterDaemon] [Info] Spawning /Users/vipin/Desktop/flutter/bin/flutter with args ["daemon"]
-[10:11:55 PM] [FlutterDaemon] [Info] ..  in /Users/vipin/Desktop/flutter
-[10:11:55 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
-[10:11:55 PM] [FlutterDaemon] [Info]     PID: 10423
-[10:11:55 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
-[10:11:58 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.0","pid":10469}}]
-[10:11:58 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
-[10:11:58 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
-[10:12:01 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
-[10:12:06 PM] [FlutterDaemon] [Info] <== [{"id":"2","result":[null,null,null,null,null,null]}]
-Tue Feb 02 2021 [22:13:23 GMT-0800 (Pacific Standard Time)] Log file ended
+Thu Feb 04 2021 [18:00:27 GMT-0800 (Pacific Standard Time)] Log file started
+[6:00:27 PM] [FlutterDaemon] [Info] Spawning /Users/vipin/Desktop/flutter/bin/flutter with args ["daemon"]
+[6:00:27 PM] [FlutterDaemon] [Info] ..  in /Users/vipin/Desktop/flutter
+[6:00:27 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[6:00:27 PM] [FlutterDaemon] [Info]     PID: 787
+[6:00:27 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
+[6:00:32 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.0","pid":820}}]
+[6:00:32 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
+[6:00:32 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[6:00:44 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[6:00:44 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm64","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
+[6:00:44 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/camera_apps/image_picker_cam"}}]
+[6:00:44 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["ios","android"]}}]
+[6:01:05 PM] [FlutterDaemon] [Info] <== [{"id":"2","result":[null,null,null,null,null,null]}]
+Thu Feb 04 2021 [18:05:44 GMT-0800 (Pacific Standard Time)] Log file ended

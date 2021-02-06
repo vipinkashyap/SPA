@@ -1,0 +1,52 @@
+!! PLEASE REVIEW THIS LOG FOR SENSITIVE INFORMATION BEFORE SHARING !!
+
+Dart Code extension: 3.19.1
+Flutter extension: 3.19.0 (not activated)
+
+App: Visual Studio Code
+Version: 1.52.1
+Platform: mac
+
+Workspace type: Flutter
+Analyzer type: DAS
+Multi-root?: false
+
+Dart SDK:
+    Loc: /Users/vipin/Desktop/flutter/bin/cache/dart-sdk
+    Ver: 2.10.5
+Flutter SDK:
+    Loc: /Users/vipin/Desktop/flutter
+    Ver: 1.22.6
+
+HTTP_PROXY: undefined
+NO_PROXY: undefined
+
+Logging Categories:
+    FlutterDaemon
+
+Fri Feb 05 2021 [16:56:04 GMT-0800 (Pacific Standard Time)] Log file started
+[4:56:04 PM] [FlutterDaemon] [Info] Spawning /Users/vipin/Desktop/flutter/bin/flutter with args ["daemon"]
+[4:56:04 PM] [FlutterDaemon] [Info] ..  in /Users/vipin/Desktop/flutter
+[4:56:04 PM] [FlutterDaemon] [Info] ..  with {"toolEnv":{"FLUTTER_HOST":"VSCode","PUB_ENVIRONMENT":"vscode.dart-code"}}
+[4:56:04 PM] [FlutterDaemon] [Info]     PID: 59864
+[4:56:04 PM] [FlutterDaemon] [Info] ==> [{"id":"1","method":"emulator.getEmulators"}]
+[4:56:07 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.connected","params":{"version":"0.6.0","pid":59897}}]
+[4:56:07 PM] [FlutterDaemon] [Info] ==> [{"id":"2","method":"device.enable"}]
+[4:56:07 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"status","message":"Starting device daemon..."}}]
+[4:56:08 PM] [FlutterDaemon] [Info] <== [{"id":"1","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[4:56:12 PM] [FlutterDaemon] [Info] <== [{"id":"2","result":[null,null,null,null,null,null]}]
+[5:03:00 PM] [FlutterDaemon] [Info] ==> [{"id":"3","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/openweather_apps/one"}}]
+[5:03:00 PM] [FlutterDaemon] [Info] <== [{"id":"3","result":{"platforms":["ios","android"]}}]
+[5:03:00 PM] [FlutterDaemon] [Info] ==> [{"id":"4","method":"emulator.getEmulators"}]
+[5:03:00 PM] [FlutterDaemon] [Info] <== [{"id":"4","result":[{"id":"apple_ios_simulator","name":"iOS Simulator","category":"mobile","platformType":"ios"}]}]
+[5:03:02 PM] [FlutterDaemon] [Info] ==> [{"id":"5","method":"emulator.launch","params":{"emulatorId":"apple_ios_simulator"}}]
+[5:03:02 PM] [FlutterDaemon] [Info] <== [{"id":"5"}]
+[5:05:41 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for ro.product.cpu.abi:"}}]
+[5:05:41 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"error: closed\n"}}]
+[5:05:41 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
+[5:05:41 PM] [FlutterDaemon] [Info] <== [{"event":"device.added","params":{"id":"CBA1E3E6-7CB8-4861-B2AD-F7D7C0EF364D","name":"iPhone 12 Pro Max","platform":"ios","emulator":true,"category":"mobile","platformType":"ios","ephemeral":true,"emulatorId":"apple_ios_simulator"}}]
+[5:05:41 PM] [FlutterDaemon] [Info] ==> [{"id":"6","method":"daemon.getSupportedPlatforms","params":{"projectRoot":"/Users/vipin/Desktop/SPA/openweather_apps/one"}}]
+[5:05:41 PM] [FlutterDaemon] [Info] <== [{"id":"6","result":{"platforms":["ios","android"]}}]
+[5:05:42 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"Error 1 retrieving device properties for ro.product.cpu.abi:"}}]
+[5:05:42 PM] [FlutterDaemon] [Info] <== [{"event":"daemon.logMessage","params":{"level":"error","message":"adb: device '9889d63854445a4e46' not found\n"}}]
+[5:05:42 PM] [FlutterDaemon] [Info] <== [{"event":"device.removed","params":{"id":"9889d63854445a4e46","name":"SM G955U","platform":"android-arm","emulator":false,"category":"mobile","platformType":"android","ephemeral":true,"emulatorId":null}}]
