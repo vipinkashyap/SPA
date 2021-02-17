@@ -1,5 +1,8 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:profilepage/settingspage.dart';
 
 class settingsUI extends StatelessWidget {
@@ -19,6 +22,8 @@ class EditProfilePage extends StatefulWidget {
 }
 
 class _EditProfilePageState extends State<EditProfilePage> {
+  PickedFile _imageFile;
+  final ImagePicker _picker = ImagePicker();
   bool showPassword = false;
   @override
   Widget build(BuildContext context) {
@@ -87,8 +92,10 @@ class _EditProfilePageState extends State<EditProfilePage> {
                         shape: BoxShape.circle,
                         image: DecorationImage(
                           fit: BoxFit.cover,
-                          image: NetworkImage(
-                              "https://cdn3.f-cdn.com/contestentries/1376995/30494909/5b566bc71d308_thumb900.jpg"),
+                          image: _imageFile == null
+                              ? NetworkImage(
+                                  "https://cdn3.f-cdn.com/contestentries/1376995/30494909/5b566bc71d308_thumb900.jpg")
+                              : FileImage(File(_imageFile.path)),
                         ),
                       ),
                     ),
@@ -106,9 +113,17 @@ class _EditProfilePageState extends State<EditProfilePage> {
                           ),
                           color: Colors.lightGreen,
                         ),
-                        child: Icon(
-                          Icons.edit,
-                          color: Colors.white,
+                        child: InkWell(
+                          onTap: () {
+                            showModalBottomSheet(
+                              context: context,
+                              builder: ((builder) => bottomSheet()),
+                            );
+                          },
+                          child: Icon(
+                            Icons.edit,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     )
@@ -120,7 +135,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
               ),
               buildTextField("Full Name", "Varun Kashyap", false),
               buildTextField("Email", "Varun9729@gmail.com", false),
-              buildTextField("Password", "*******", true),
+              buildTextField("Password", "***", true),
               buildTextField("Location", "Springfield, IL", false),
               SizedBox(
                 height: 30.0,
@@ -202,5 +217,52 @@ class _EditProfilePageState extends State<EditProfilePage> {
         ),
       ),
     );
+  }
+
+  Widget bottomSheet() {
+    return Container(
+      height: 100.0,
+      width: MediaQuery.of(context).size.width,
+      margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+      child: Column(
+        children: [
+          Text(
+            'Choose Profile Picture',
+            style: TextStyle(
+              fontSize: 20.0,
+            ),
+          ),
+          SizedBox(
+            height: 20.0,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              FlatButton.icon(
+                icon: Icon(FontAwesomeIcons.camera),
+                onPressed: () {
+                  takePhoto(ImageSource.camera);
+                },
+                label: Text('Camera'),
+              ),
+              FlatButton.icon(
+                icon: Icon(FontAwesomeIcons.image),
+                onPressed: () {
+                  takePhoto(ImageSource.gallery);
+                },
+                label: Text('Gallery'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  void takePhoto(ImageSource source) async {
+    final pickedFile = await _picker.getImage(source: source);
+    setState(() {
+      _imageFile = pickedFile;
+    });
   }
 }
