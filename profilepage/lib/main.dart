@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:profilepage/edit_profilepage.dart';
+
 import 'button.dart';
 import 'buttontapped.dart';
-import 'settingspage.dart';
 
 void main() => runApp(MyApp());
 
@@ -68,10 +68,11 @@ class _MyHomePageState extends State<MyHomePage> {
       buttonPressed1 = false;
       buttonPressed2 = false;
       buttonPressed3 = false;
-      buttonPressed4 = true
-          ? Navigator.of(context).push(MaterialPageRoute(
-              builder: (BuildContext context) => settingsUI()))
-          : MyButton();
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (BuildContext context) {
+        buttonPressed4 = true;
+        return settingsUI();
+      }));
     });
   }
 
